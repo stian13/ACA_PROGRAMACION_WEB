@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*section-cards-motos ACA SE MOSTRARAN TODAS LAS MOTOS DEL SEGMENTO*/
+.section-cards-motos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
+    margin: 5% 0 5% 0;
+}
+.cards-moto-unica{
+    width: 100%;
+    height: 380px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.img-cards-moto{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.cards-moto-nombre{
+    text-align:center
+}
+.cards-moto-unica:hover{
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+}
+
+/*mostrador de informacion moto*/
+
+.section-informacion-motos{
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+.conteniner-informacion-motos{
+    min-width: 320px;
+    max-width: 500px;
+    
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+.cards-moto-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin : 10px 0 10px 0;
+    
+}
+.conteniner-informacion-motos .salir{
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+.cards-moto-descripcion{
+    text-align: justify;
+    padding: 10px 5px 10px 5px;
+}
+.lista-caracteristicas{
+    margin: 0 10px 0 10px;
+}
+
+/*
+.img-cards-moto:hover{
+    transform: scale(1);
+    transition: all 2s ease;
+}*/
