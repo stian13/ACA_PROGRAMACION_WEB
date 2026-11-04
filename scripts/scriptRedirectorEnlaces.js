@@ -1,6 +1,10 @@
 const motos125 = document.getElementById("motos125");
 const motos160 = document.getElementById("motos160");
 const motos200 = document.getElementById("motos200");
+const headerTitleClick = document.getElementById("header-title-click");
+headerTitleClick.addEventListener("click", () => {
+    window.location.href = "index.html";
+});
 //este codigo se encarga de redirigir a la pagina correspondiente al hacer click en cada tarjeta de moto
 motos125.addEventListener("click", () => {
     window.location.href = "motos125.html";
